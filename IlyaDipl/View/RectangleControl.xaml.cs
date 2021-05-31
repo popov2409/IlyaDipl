@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace IlyaDipl.View
 {
     /// <summary>
-    /// Логика взаимодействия для ElementControl.xaml
+    /// Логика взаимодействия для RectangleControl.xaml
     /// </summary>
-    public partial class ElementControl : UserControl
+    public partial class RectangleControl : UserControl
     {
-        public ElementControl()
+        public RectangleControl()
         {
             InitializeComponent();
         }

@@ -62,8 +62,11 @@
     <Compile Include="View\BaseToolTip.xaml.cs">
       <DependentUpon>BaseToolTip.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\ElementControl.xaml.cs">
-      <DependentUpon>ElementControl.xaml</DependentUpon>
+    <Compile Include="View\RectangleControl.xaml.cs">
+      <DependentUpon>RectangleControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TtriangleControl.xaml.cs">
+      <DependentUpon>TtriangleControl.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -85,7 +88,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ElementControl.xaml">
+    <Page Include="View\RectangleControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TtriangleControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
