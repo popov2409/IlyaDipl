@@ -43,8 +43,24 @@ namespace IlyaDipl.Services
         /// <param name="el"></param>
         private static void PictureElement(Element el)
         {
-            //MainCanvas.Children.Add(el);
-           
+            if(el==null) return;
+            switch (el.ElementType)
+            {
+                case 2:
+                {
+                    RectangleControl d = new RectangleControl(el);
+                    MainCanvas.Children.Add(d);
+                    break;
+                }
+                case 1:
+                {
+                    TtriangleControl d = new TtriangleControl(el);
+                    MainCanvas.Children.Add(d);
+                    break;
+                }
+               
+            }
+
         }
 
         /// <summary>

@@ -27,8 +27,6 @@ namespace IlyaDipl.View
         {
             InitializeComponent();
             InitializeComponent();
-
-            //Переделать
             ElementTypeCombobox.ItemsSource = BaseDataStore.ElementTypes;
         }
 
@@ -49,7 +47,8 @@ namespace IlyaDipl.View
                 Mark = MarkTextBox.Text,
                 ImageSource = _photoPath,
                 Location = locate,
-                Purpose = PurposeTextBox.Text
+                Purpose = PurposeTextBox.Text,
+                Size = new Size(Double.Parse(WidthTextBlock.Text),Double.Parse(HeightTextBlock.Text) )
             };
             BaseDataStore.AddElement(el);
             element = el;

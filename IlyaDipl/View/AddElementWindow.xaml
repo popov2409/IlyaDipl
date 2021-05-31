@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IlyaDipl.View"
         mc:Ignorable="d"
-        Title="Добавить новый элемент" Height="450" Width="400" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" FontSize="16">
+        Title="Добавить новый элемент" Height="700" Width="400" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" FontSize="16">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -25,13 +26,22 @@
         <TextBox Grid.Row="1" Grid.Column="1" Name="MarkTextBox" Margin="1"/>
 
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Назначение" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,10,0"/>
+        <TextBox Name="PurposeTextBox" Grid.Row="2" Grid.Column="1" MinHeight="80" TextWrapping="Wrap" AcceptsReturn="True" ></TextBox>
 
-        <StackPanel Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,10,0">
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Размер" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,10,0"/>
+        <!--<TextBox Name="PurposeTextBox" Grid.Row="2" Grid.Column="1" MinHeight="80" TextWrapping="Wrap" AcceptsReturn="True" ></TextBox>-->
+        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" >
+            <TextBlock Text="Ш:"/>
+            <TextBox Name="WidthTextBlock" Width="60" Text="80"/>
+            <TextBlock Text="  X     В:"/>
+            <TextBox Name="HeightTextBlock" Width="60" Text="100"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,10,0">
             <TextBlock  Text="Фото" />
             <Button Content="Загрузить..." Name="LoadFotoButton" Click="LoadFotoButton_OnClick"></Button>
         </StackPanel>
-        <Image Grid.Column="1" Grid.Row="3" Margin="1" Name="ElementPictureImage"></Image>
-        <TextBox Name="PurposeTextBox" Grid.Row="2" Grid.Column="1" MinHeight="80" TextWrapping="Wrap" AcceptsReturn="True" ></TextBox>
-        <Button Name="SaveButton" Grid.ColumnSpan="2" Grid.Column="0" Margin="1" Grid.Row="4" Content="Сохранить" FontSize="16" Height="40" Click="SaveButton_OnClick"/>
+        <Image Grid.Column="1" Grid.Row="4" Margin="1" Name="ElementPictureImage"></Image>
+        <Button Name="SaveButton" Grid.ColumnSpan="2" Grid.Column="0" Margin="1" Grid.Row="5" Content="Сохранить" FontSize="16" Height="40" Click="SaveButton_OnClick"/>
     </Grid>
 </Window>

@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IlyaDipl"
+        xmlns:view="clr-namespace:IlyaDipl.View"
         mc:Ignorable="d"
         Title="" Height="720" Width="1080" WindowState="Maximized" PreviewMouseDown="MainWindow_OnPreviewMouseDown" Closed="Window_Closed">
     <Grid>
@@ -33,7 +34,6 @@
                 <Canvas.Background>
                     <ImageBrush ImageSource="Images/IL.jpg"/>
                 </Canvas.Background>
-               
             </Canvas>
         </ScrollViewer>
 

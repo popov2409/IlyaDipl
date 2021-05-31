@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using IlyaDipl.Models;
 
 namespace IlyaDipl.View
 {
@@ -19,9 +20,14 @@ namespace IlyaDipl.View
     /// </summary>
     public partial class BaseToolTip : UserControl
     {
-        public BaseToolTip()
+        public BaseToolTip(Element el)
         {
             InitializeComponent();
+            MarkTextBlock.Text = el.Mark;
+            PurposeTextBox.Text = el.Purpose;
+            if (el.ImageSource.Length < 1) return;
+            ElementPictureImage.Source = new BitmapImage(new Uri(new Uri("file://"),
+                AppDomain.CurrentDomain.BaseDirectory + "images/" + el.ImageSource));
         }
     }
 }

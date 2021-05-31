@@ -33,7 +33,7 @@ namespace IlyaDipl
 
         private void MainWindow_OnPreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            //BasePicture.ClearAllSelected();
+            BasePicture.ClearAllSelected();
         }
 
         private void Zoom_MouseWheel(object sender, MouseWheelEventArgs e)
