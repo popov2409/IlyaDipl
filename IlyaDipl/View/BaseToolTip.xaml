@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="IlyaDipl.View.BaseToolTip"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IlyaDipl.View"
+             mc:Ignorable="d" 
+             Height="300" Width="300" FontSize="16">
+    <Grid Background="Aquamarine" ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Маркировка" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,10,0"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Name="MarkTextBlock" Margin="5,0,0,0"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Назначение" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,10,0"/>
+        <TextBlock Name="PurposeTextBox" Grid.Row="1" Grid.Column="1" MinHeight="80" TextWrapping="Wrap" Margin="5,0,0,0" />
+
+
+        <TextBlock Grid.Row="2" Grid.Column="0"  Text="Фото" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,10,0"  />
+        <Image Grid.Column="1" Grid.Row="2" Margin="1" Name="ElementPictureImage"></Image>
+    </Grid>
+</UserControl>
