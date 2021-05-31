@@ -20,7 +20,7 @@
             <Button Name="ClearSearchButton" Grid.Column="1" Width="80" Content="Очистить" Margin="1" Click="ClearSearchButton_OnClick"/>
         </Grid>
 
-        <ScrollViewer Grid.Row="1" Grid.Column="0" Name="ScrW" PreviewMouseWheel="Zoom_MouseWheel" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Width="1080" Height="760" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0">
+        <ScrollViewer Grid.Row="1" Grid.Column="0" Name="ScrW" PreviewMouseWheel="Zoom_MouseWheel" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Width="1200" Height="760" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0">
             <!--<Viewbox Name="BaseView"  Stretch="Uniform"  Width="700" Height="300" >-->
             <Canvas Name="BaseCanvas" ClipToBounds="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" PreviewMouseDown="BaseCanvas_PreviewMouseDown" >
                 <Canvas.ContextMenu>

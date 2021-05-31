@@ -60,6 +60,7 @@ namespace IlyaDipl.Services
         /// </summary>
         public static void LoadData()
         {
+            CreateDictionary();
             Elements = new List<Element>();
             XmlSerializer formatter = new XmlSerializer(typeof(List<Element>));
 
@@ -78,6 +79,18 @@ namespace IlyaDipl.Services
 
             }
 
+        }
+
+        /// <summary>
+        /// Создание спика типов элементов
+        /// </summary>
+        private static void CreateDictionary()
+        {
+            ElementTypes = new Dictionary<int, string>
+            {
+                {1, "Треугольник"},
+                {2, "Прямоугольник"}
+            };
         }
 
     }

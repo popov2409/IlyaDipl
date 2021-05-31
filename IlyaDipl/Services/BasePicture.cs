@@ -5,10 +5,11 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using IlyaDipl.Models;
 using IlyaDipl.Services;
 using IlyaDipl.View;
 
-namespace IlyaDipl.Models
+namespace IlyaDipl.Services
 {
     public static class BasePicture
     {
