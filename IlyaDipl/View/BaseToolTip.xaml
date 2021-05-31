@@ -19,7 +19,7 @@
 
 
         <TextBlock Grid.Row="0" Grid.Column="0" Text="Маркировка" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,10,0"/>
-        <TextBlock Grid.Row="0" Grid.Column="1" Name="MarkTextBlock" Margin="5,0,0,0"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Name="MarkTextBlock" Margin="5,0,0,0" TextWrapping="Wrap"/>
 
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Назначение" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,10,0"/>
         <TextBlock Name="PurposeTextBox" Grid.Row="1" Grid.Column="1" MinHeight="80" TextWrapping="Wrap" Margin="5,0,0,0" />

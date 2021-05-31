@@ -30,11 +30,13 @@ namespace IlyaDipl.View
             this.ToolTip = new BaseToolTip(Element);
             this.Width = Element.Size.Width;
             this.Height = Element.Size.Height;
+            NameTextBlock.MaxWidth = this.Width - 8;
+            NameTextBlock.MaxHeight = this.Height - 10;
             PointCollection pp=new PointCollection
             {
-                new Point(this.Width,0),
-                new Point(0,this.Height/2),
-                new Point(this.Width,this.Height), 
+                new Point(this.Width-4,4),
+                new Point(4,this.Height/2),
+                new Point(this.Width-4,this.Height-4), 
             };
             Polygon pol=new Polygon()
             {

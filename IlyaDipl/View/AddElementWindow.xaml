@@ -15,21 +15,20 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition/>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="472*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Grid.Column="0" Text="Тип элемента" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,10,0"/>
         <ComboBox Grid.Row="0" Grid.Column="1" Text="Тип элемента" DisplayMemberPath="Value" Name="ElementTypeCombobox" Margin="1"/>
 
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Маркировка" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,10,0"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Name="MarkTextBox" Margin="1"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="MarkTextBox" Margin="1" TextWrapping="Wrap" AcceptsReturn="True"/>
 
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Назначение" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,10,0"/>
         <TextBox Name="PurposeTextBox" Grid.Row="2" Grid.Column="1" MinHeight="80" TextWrapping="Wrap" AcceptsReturn="True" ></TextBox>
 
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Размер" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,10,0"/>
-        <!--<TextBox Name="PurposeTextBox" Grid.Row="2" Grid.Column="1" MinHeight="80" TextWrapping="Wrap" AcceptsReturn="True" ></TextBox>-->
         <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" >
             <TextBlock Text="Ш:"/>
             <TextBox Name="WidthTextBlock" Width="60" Text="80"/>

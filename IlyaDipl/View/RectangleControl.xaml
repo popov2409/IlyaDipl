@@ -13,6 +13,6 @@
     </UserControl.ContextMenu>
     <Grid Background="Transparent">
             <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="Yellow" Stroke="Red" StrokeThickness="3"></Rectangle>
-        <TextBlock Name="NameTextBlock" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"  TextAlignment="Center"/>
+        <TextBlock Name="NameTextBlock" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"  TextAlignment="Center" FontSize="12"/>
     </Grid>
 </UserControl>

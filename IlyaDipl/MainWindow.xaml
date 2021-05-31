@@ -12,6 +12,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition />
         </Grid.RowDefinitions>
+        
         <Grid Grid.Row="0" Grid.Column="0" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -37,5 +38,6 @@
             </Canvas>
         </ScrollViewer>
 
+        <!--<Grid Name="OptionGrid" Grid.Row="1" Grid.Column="1"/>-->
     </Grid>
 </Window>
